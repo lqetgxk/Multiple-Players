@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dLu-Yo-E1b">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About Video View Controller-->
+        <scene sceneID="9qb-Pd-y6W">
+            <objects>
+                <viewController storyboardIdentifier="AboutVideoViewController" id="rlm-IU-ZJ4" customClass="AboutVideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RUQ-yp-Cia"/>
+                        <viewControllerLayoutGuide type="bottom" id="kCh-vS-uB7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kqb-PH-DWh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LP-OA-geq">
+                                <rect key="frame" x="142" y="567" width="90" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="下一页">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="aYk-tz-EDS" kind="show" id="XgA-Gs-cyI"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="702-zk-HOr">
+                                <rect key="frame" x="16" y="8" width="343" height="551"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">添加视频文件方式：
+
+1.点击视频界面左上角的录像按钮，可录制视频。
+
+2.数据线连接电脑，打开iTunes，找到并选择此应用，再点击又下角的添加选择需要添加的文件。
+
+3.点击视频界面右上角的编辑按钮，进入编辑状态后再点击下面工具条上的添加按钮。此时会弹出一个窗口，输入你的视频地址即可。
+
+
+播放方式：
+
+1.点击已添加的视频，进入播放界面。
+
+2.在播放界面选择多视图，再点击其中间的按钮添加视频文件。
+
+3.从收藏组界面点击收藏组进入播放界面，它会自动播放上次播放的视频组。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qh4-SE-mhV">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title="返回" id="hJW-t0-lHt"/>
+                        <view key="titleView" contentMode="scaleToFill" id="UOn-VL-vRm">
+                            <rect key="frame" x="112.5" y="5.5" width="150" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="关于视频" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ees-1w-rOu">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="33"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="buttonNextPage" destination="0LP-OA-geq" id="LYT-HF-1P2"/>
+                        <outlet property="labelTitle" destination="Ees-1w-rOu" id="IuS-Oj-qHe"/>
+                        <outlet property="textView" destination="702-zk-HOr" id="TRP-6e-EvG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y2M-Qt-Iev" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="680.79999999999995" y="17.541229385307346"/>
+        </scene>
+        <!--New Version View Controller-->
+        <scene sceneID="wsw-NF-3je">
+            <objects>
+                <viewController storyboardIdentifier="NewVersionViewController" extendedLayoutIncludesOpaqueBars="YES" id="9z1-4I-1tB" customClass="NewVersionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j5n-Wx-7bP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tay-Jo-kej"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WcW-Zo-3q4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUj-Hj-NS3">
+                                <rect key="frame" x="143" y="591" width="90" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="4EA-69-oqX"/>
+                                    <constraint firstAttribute="width" constant="90" id="nBI-pC-5Ne"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="知道了">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="enterHome:" destination="9z1-4I-1tB" eventType="touchUpInside" id="cxt-3Z-rTu"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jpK-3I-6WK">
+                                <rect key="frame" x="16" y="64" width="343" height="519"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">1.修复在iPhone6之前的手机上标题不居中的问题。
+
+2.修复收藏组过段时间无效的问题。 
+
+3.修复分享网络图片闪退的问题。
+
+4.增加将视频(格式限为mov、mp4､ m4a、m4v)或图片保存到相册的功能。
+
+5.增加视频(格式限为mov、mp4､ m4a、m4v)剪辑的功能。
+
+6.增加对多个视频(格式限为mov、mp4､ m4a、m4v)进行合成为一个视频的功能。
+
+7.增加了一个新方式的播放器。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dUj-Hj-NS3" firstAttribute="top" secondItem="jpK-3I-6WK" secondAttribute="bottom" constant="8" id="DnR-q9-eLP"/>
+                            <constraint firstItem="jpK-3I-6WK" firstAttribute="trailing" secondItem="WcW-Zo-3q4" secondAttribute="trailingMargin" id="Sdy-u7-WuF"/>
+                            <constraint firstItem="dUj-Hj-NS3" firstAttribute="centerX" secondItem="WcW-Zo-3q4" secondAttribute="centerX" id="fJS-Uc-PNw"/>
+                            <constraint firstItem="jpK-3I-6WK" firstAttribute="leading" secondItem="WcW-Zo-3q4" secondAttribute="leadingMargin" id="fSZ-tI-IUh"/>
+                            <constraint firstItem="Tay-Jo-kej" firstAttribute="top" secondItem="dUj-Hj-NS3" secondAttribute="bottom" constant="20" id="nr5-ge-xkA"/>
+                            <constraint firstItem="jpK-3I-6WK" firstAttribute="top" secondItem="j5n-Wx-7bP" secondAttribute="bottom" constant="8" symbolic="YES" id="wMd-rI-w6p"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KUs-0p-gpO">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title="返回" id="kwM-7f-Iwc"/>
+                        <view key="titleView" contentMode="scaleToFill" id="goD-U7-4DR">
+                            <rect key="frame" x="112.5" y="11.5" width="150" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="新版本" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2e-gl-xDb">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="33"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="buttonNext" destination="dUj-Hj-NS3" id="KIP-Jq-d9x"/>
+                        <outlet property="labelTitle" destination="I2e-gl-xDb" id="jrY-9S-Ew1"/>
+                        <outlet property="textView" destination="jpK-3I-6WK" id="EAj-g6-DaS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WIw-XK-sAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258.39999999999998" y="796.55172413793105"/>
+        </scene>
+        <!--About Picture View Controller-->
+        <scene sceneID="JNb-90-nDC">
+            <objects>
+                <viewController id="aYk-tz-EDS" customClass="AboutPictureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EGe-jW-FGu"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sq2-4G-IRw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I58-Id-dKM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1p-KB-ZBR">
+                                <rect key="frame" x="142" y="567" width="90" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="下一页">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Tgc-hJ-Bfi" kind="show" id="kdD-df-hXV"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Ps-xW-4v7">
+                                <rect key="frame" x="16" y="8" width="343" height="551"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">添加图片文件方式：
+
+1.点击图片界面左上角的照相按钮，可进行拍照或从相册选择图片。
+
+2.数据线连接电脑，打开iTunes，找到并选择此应用，再点击又下角的添加选择需要添加的文件。
+
+3.点击图片界面右上角的编辑按钮，进入编辑状态后再点击下面工具条上的添加按钮。此时会弹出一个窗口，输入你的图片地址即可。
+
+4.在播放视频时点击“抓图”按钮。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0YC-ag-gQg">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title="返回" id="mGh-Gr-9gM"/>
+                        <view key="titleView" contentMode="scaleToFill" id="3S4-fH-jkM">
+                            <rect key="frame" x="112.5" y="5.5" width="150" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="关于图片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ni-qd-Ehe">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="33"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="buttonNextPage" destination="d1p-KB-ZBR" id="c8d-8c-Ax7"/>
+                        <outlet property="labelTitle" destination="4ni-qd-Ehe" id="BjB-ZR-fkA"/>
+                        <outlet property="textView" destination="4Ps-xW-4v7" id="yiS-An-mS3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWr-g2-g5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1541.5999999999999" y="17.541229385307346"/>
+        </scene>
+        <!--Guide Navigation Controller-->
+        <scene sceneID="CHi-mn-dw6">
+            <objects>
+                <navigationController storyboardIdentifier="GuideNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="dLu-Yo-E1b" customClass="GuideNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="hGP-wK-WMq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rlm-IU-ZJ4" kind="relationship" relationship="rootViewController" id="h3H-YV-wCZ"/>
+                        <segue destination="9z1-4I-1tB" kind="show" id="XAj-C1-uLY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DyB-tJ-irD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258.39999999999998" y="17.541229385307346"/>
+        </scene>
+        <!--About Private View Controller-->
+        <scene sceneID="DbV-yD-DMg">
+            <objects>
+                <viewController id="Tgc-hJ-Bfi" customClass="AboutPrivateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i6l-Aj-Cud"/>
+                        <viewControllerLayoutGuide type="bottom" id="d6W-hs-Vv2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9TW-5C-cfg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjN-Tc-bnj">
+                                <rect key="frame" x="142" y="567" width="90" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="进入">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="enterHome:" destination="Tgc-hJ-Bfi" eventType="touchUpInside" id="kFh-rN-34M"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="feP-pX-dOm">
+                                <rect key="frame" x="16" y="8" width="350" height="551"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">1.设置界面-&gt;私密管理，如果您直接点击整条会出现输入密码弹出框，初始密码为空，直接点击确认就可进入；但如果你想要设置它，则需要点击此条未尾的蓝色i型按钮。
+
+2.密码锁定：开启后表示进入每次“私密管理”都需要输入密码；关闭后表示每次进入“私密管理”都不需要输入密码。关闭时如果输入的密码正确，则会进入真正的“私密管理”；关闭时如果输入的密码错误，则会进入伪装“私密管理”。如果关闭时输入的密码错误后想输入正确的密码则需要重新开关一次就可以了。
+
+3.密码设置：正确方式，长按“密码设置”3秒弹出对话框，只需要输入一次密码，重复操作将保存最后一次设置；伪装方式，点击一下“密码设置”弹出对话框，需要输入两次密码，其实并没有什么用。
+
+4.对外公开：开启时则会根据你输入的密码在首页里面显示你的私密文件，密码正确则显示在首页中，密码错误则不会显示。如果开启时输入的密码错误后想输入正确的密码则需要重新关开一次就可以了。
+
+5.私密管理：如果“私密设置”里面的密码锁定是开启的，则每次进入都需要输入密码，不管密码正确与否都能进去，不正确时进去后将没有任何文件及做的任何操作都不能保存，只有密码正确后才能看到应有的文件和做有效的操作。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HR7-qO-Szr">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title="返回" id="5EG-eZ-nQ0"/>
+                        <view key="titleView" contentMode="scaleToFill" id="2JI-Bb-8b1">
+                            <rect key="frame" x="112.5" y="5.5" width="150" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="关于私密" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cs5-of-z6b">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="33"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="buttonNext" destination="WjN-Tc-bnj" id="2Oq-Ua-Q98"/>
+                        <outlet property="labelTitle" destination="cs5-of-z6b" id="OBN-nR-g7T"/>
+                        <outlet property="textView" destination="feP-pX-dOm" id="gwd-l8-KfW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDz-he-xVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2424.8000000000002" y="17.541229385307346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

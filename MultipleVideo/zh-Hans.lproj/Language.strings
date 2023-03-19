@@ -1,0 +1,180 @@
+/* 
+  Language.strings
+  MultipleVideo
+
+  Created by issuser on 2017/6/1.
+  Copyright © 2017年 lsq. All rights reserved.
+*/
+
+/*
+ *  @author 罗胜强, 2017-06-18 19:06:01
+ *
+ *  本地化多语言翻译。格式是("key" = "value";)，是括号里面的，不包含括号；需要注意的是双引号、等号和分号都必需在英文输入
+ *  法状态下输入。字体是UTF-8，内容是value。
+ *  以“//”开头的行不需要翻译，中间出现的“\n”保留不作处理。
+ *
+ *  @translator 罗胜强, 2017-06-18 19:06:01
+ */
+
+
+//引导页
+"Guide_About_Video" = "关于视频";
+"Guide_About_Picture" = "关于图片";
+"Guide_About_Private" = "关于私密";
+"Guide_About_Video_Introduce" = "添加视频文件方式：\n\n1.点击视频界面左上角的录像按钮，可录制视频。\n\n2.数据线连接电脑，打开iTunes，找到并选择此应用，再点击又下角的添加选择需要添加的文件。\n\n3.点击视频界面右上角的编辑按钮，进入编辑状态后再点击下面工具条上的添加按钮。\n\n\n播放方式：\n\n1.点击已添加的视频，进入播放界面。\n\n2.在播放界面选择多视图，再点击其中间的按钮添加视频文件。\n\n3.从收藏组界面点击收藏组进入播放界面，它会自动播放上次播放的视频组。";
+"Guide_About_Picture_Introduce" = "添加图片文件方式：\n\n1.点击图片界面左上角的照相按钮，可进行拍照以保存图片。\n\n2.数据线连接电脑，打开iTunes，找到并选择此应用，再点击右下角的添加选择需要添加的文件。\n\n3.点击图片界面右上角的编辑按钮，进入编辑状态后再点击下面工具条上的添加按钮。\n\n4.在播放视频时点击“抓图”按钮。";
+"Guide_About_Private_Introduce" = "1.设置界面->私密管理，如果您直接点击整条会出现输入密码弹出框，初始密码为空，直接点击确认就可进入；但如果你想要设置它，则需要点击此条未尾的蓝色i型按钮。\n\n2.密码锁定：开启后表示每次进入“私密管理”都需要输入密码；关闭后表示每次进入“私密管理”都不需要输入密码。关闭时如果输入的密码正确，则会进入真正的“私密管理”；关闭时如果输入的密码错误，则会进入伪装“私密管理”。如果关闭时输入的密码错误后想输入正确的密码则需要重新开关一次就可以了。\n\n3.密码设置：正确方式，长按“密码设置”3秒弹出对话框，只需要输入一次密码，重复操作将保存最后一次设置；伪装方式，点击一下“密码设置”弹出对话框，需要输入两次密码，其实并没有什么用。\n\n4.对外公开：开启时则会根据你输入的密码在首页里面显示你的私密文件，密码正确则显示在首页中，密码错误则不会显示。如果开启时输入的密码错误后想输入正确的密码则需要重新关开一次就可以了。\n\n5.私密管理：如果“私密设置”里面的密码锁定是开启的，则每次进入都需要输入密码，不管密码正确与否都能进去，不正确时进去后将没有任何文件及做的任何操作都不能保存，只有密码正确后才能看到应有的文件和做有效的操作。";
+"Guide_Next_Page" = "下一页";
+"Guide_Enter" = "进入";
+"Guide_New_Version" = "新版本";
+"Guide_Version_description" = "1.修复在全面屏设备上呈现的一些问题。";
+"Guide_Know" = "知道了";
+
+//首页和通用
+"Home_Right_Enable" = "编辑";
+"Home_Right_Disable" = "取消";
+"Home_Left_Back" = "返回";
+"Home_Delete" = "删除";
+"Home_Rename" = "重命名";
+"Home_Add" = "添加";
+"Home_Share" = "分享";
+"Home_Share_Title" = "多播";
+"Home_Share_Content" = "这张图片很有趣";
+"Home_Share_Succeed" = "分享成功";
+"Home_Share_Failure" = "分享失败";
+"Home_Move_Out" = "移出";
+"Home_Alert_Yes" = "是的";
+"Home_Alert_No" = "不是";
+"Home_Alert_OK" = "确定";
+"Home_Alert_Cancel" = "取消";
+"Home_Alert_Know" = "好";
+
+//视频
+"Video_Title" = "视频";
+"Video_Record" = "录像";
+"Video_Local_File" = "本地视频";
+"Video_Network_File" = "网络视频";
+"Video_Import_Video" = "导入视频";
+"Video_Play_This_Video" = "视频播放";
+"Video_Video_Clip" = "视频剪辑";
+"Video_Video_Synthesis" = "视频合成";
+"Video_Save_To_Album" = "保存到相册";
+"Video_Alert_Title1" = "视频";
+"Video_Alert_Message1" = "您确定要删除这些视频吗";
+"Video_Alert_Message2" = "请输入新的名字";
+"Video_Alert_Title3" = "添加网络视频";
+"Video_Alert_Message3" = "请输入一个视频的URL地址";
+"Video_Alert_Message4" = "请输入一个别名，用于显示";
+"Video_Alert_Title5" = "没有权限";
+"Video_Alert_Message5" = "您需要到设置中开启访问权限";
+
+//图片
+"Picture_Title" = "图片";
+"Picture_Photo" = "照相";
+"Picture_Local_File" = "本地图片";
+"Picture_Network_File" = "网络图片";
+"Picture_Import_Photo" = "导入照片";
+"Picture_Album" = "从相册中选择";
+"Picture_Take_Photo" = "拍照";
+"Picture_To_Album" = "存入相册";
+"Picture_Alert_Title1" = "张图片";
+"Picture_Alert_Message1" = "您确定要删除这些图片吗";
+"Picture_Alert_Title2" = "添加网络图片";
+"Picture_Alert_Message2" = "请输入一个图片URL地址";
+
+//收藏组
+"Gruop_Title" = "收藏组";
+
+//设置
+"Setting_Title" = "设置";
+"Setting_Password_Lock" = "密码锁定";
+"Setting_Record_Play_Time" = "记录播放时间";
+"Setting_Private_Manage" = "私密管理";
+"Setting_Video_Play" = "视频播放";
+"Setting_Video_Clip" = "视频剪辑";
+"Setting_Video_Synthesis" = "视频合成";
+"Setting_Version" = "版本";
+"Setting_Language" = "语言";
+"Setting_Select_Language" = "选择语言";
+"Setting_Chinese" = "中文";
+"Setting_English" = "English";
+"Setting_Spanish" = "Español";
+"Setting_Go_AppStore" = "去应用商店评论";
+"Setting_Alert_Title" = "密码";
+"Setting_Alert_Message" = "请输入密码";
+
+//显示
+"Display_Title" = "收藏此组";
+"Display_One_View" = "一视图";
+"Display_Two_View" = "二视图";
+"Display_Three_View" = "三视图";
+"Display_Four_View" = "四视图";
+"Display_Five_View" = "五视图";
+"Display_Six_View" = "六视图";
+"Display_Forward" = "前进";
+"Display_Back" = "后退";
+"Display_Second" = "秒";
+
+//选择文件
+"Select_Title" = "选择文件";
+"Select_Confirm" = "确认";
+
+//私密设置
+"Private_Setting_Title" = "私密设置";
+"Private_Setting_Password_Lock" = "密码锁定";
+"Private_Setting_Set_Password" = "密码设置";
+"Private_Setting_Public_All" = "对外公开";
+"Private_Setting_Alert_Title1" = "设置密码";
+"Private_Setting_Alert_Message1" = "请输入密码";
+"Private_Setting_Alert_Message2" = "请再次输入密码";
+"Private_Setting_Alert_Title2" = "密码";
+"Private_Setting_Alert_Title3" = "失败";
+"Private_Setting_Alert_Message3" = "两次输入不一致或都为空,请重新输入";
+
+//私密介绍
+"Private_Introduce_Title" = "私密介绍";
+"Private_Introduce_Save" = "保存";
+"Private_Introduce_Content" = "1.密码锁定：开启后表示每次进入“私密管理”都需要输入密码；关闭后表示每次进入“私密管理”都不需要输入密码。关闭时如果输入的密码正确，则会进入真正的“私密管理”；关闭时如果输入的密码错误，则会进入伪装“私密管理”。如果关闭时输入的密码错误后想输入正确的密码则需要重新开关一次就可以了。\n\n2.密码设置：正确方式，长按“密码设置”3秒弹出对话框，只需要输入一次密码，重复操作将保存最后一次设置；伪装方式，点击一下“密码设置”弹出对话框，需要输入两次密码，其实并没有什么用。\n\n3.对外公开：开启时则会根据你输入的密码在首页里面显示你的私密文件，密码正确则显示在首页中，密码错误则不会显示。如果开启时输入的密码错误后想输入正确的密码则需要重新关开一次就可以了。\n\n4.私密管理：如果“私密设置”里面的密码锁定是开启的，则每次进入都需要输入密码，不管密码正确与否都能进去，不正确时进去后将没有任何文件及做的任何操作都不能保存，只有密码正确后才能看到应有的文件和做有效的操作。\n\n5.此处介绍可以编辑修改，下次将呈现您修改后的内容。";
+
+//私密文件
+"Private_File_Title" = "私密文件";
+
+//密码锁定
+"Password_Title" = "密码锁定";
+"Password_Set" = "设置密码";
+"Password_Cancel" = "取消";
+"Password_Hint1" = "请输入密码";
+"Password_Hint2" = "请再次输入密码";
+"Password_Hint3" = "两次输入密码不一致，请重新设置";
+"Password_Hint4" = "设置密码成功";
+"Password_Hint5" = "密码错误，请重新输入";
+"Password_Hint6" = "密码正确";
+
+//图片浏览器
+"Picture_Browser_Title" = "图片浏览器";
+"Picture_Browser_Share" = "删除";
+
+//视频播放
+"VideoPlay_Title" = "视频播放";
+"VideoPlay_Full_Screen" = "全屏";
+"VideoPlay_Normal_Screen" = "取消";
+
+//视频合成
+"VideoSynthesis_Title" = "视频合成";
+"VideoSynthesis_Add" = "添加";
+"VideoSynthesis_Delete" = "删除";
+"VideoSynthesis_Synthesis" = "合成";
+"VideoSynthesis_Compositing" = "正在合成";
+"VideoSynthesis_Succeed" = "成功";
+"VideoSynthesis_Failed" = "失败";
+
+//视频剪辑
+"VideoClip_Title" = "视频剪辑";
+"VideoClip_Add" = "添加";
+"VideoClip_Replace" = "更换";
+"VideoClip_Begin_Time" = "开始时间";
+"VideoClip_End_Time" = "结束时间";
+"VideoClip_Clip" = "剪辑";
+"VideoClip_Editing" = "正在剪辑";
+"VideoClip_Succeed" = "成功";
+"VideoClip_Failed" = "失败";

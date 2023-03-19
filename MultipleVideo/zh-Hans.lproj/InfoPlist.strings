@@ -1,0 +1,12 @@
+/* 
+  File.strings
+  MultipleVideo
+
+  Created by issuser on 2017/6/3.
+  Copyright © 2017年 lsq. All rights reserved.
+*/
+
+CFBundleDisplayName = "多播";
+NSMicrophoneUsageDescription = "允许后，在视频录制的同时进行音频录制，以便回放时更好的还原场景";
+NSCameraUsageDescription = "允许后，您可以进行录制视频或拍照，数据将保存在此App中，以便回放和查看";
+NSPhotoLibraryUsageDescription = "允许后，您可以将相册中的照片导入到此App中，以便查看和管理";

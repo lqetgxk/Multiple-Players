@@ -1,0 +1,12 @@
+/* 
+  File.strings
+  MultipleVideo
+
+  Created by issuser on 2017/6/3.
+  Copyright © 2017年 lsq. All rights reserved.
+*/
+
+CFBundleDisplayName = "Multiple Players";
+NSMicrophoneUsageDescription = "If you allow it, it will record the audio at the same time you record the video to better restore the scene when playing back";
+NSCameraUsageDescription = "If you allow, you can record video or take a photo, and the data will be stored in the App for playback and viewing";
+NSPhotoLibraryUsageDescription = "If you allow, you can import photos from the album into the App for viewing and managing";

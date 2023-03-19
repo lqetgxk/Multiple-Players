@@ -1,0 +1,180 @@
+/* 
+  Language.strings
+  MultipleVideo
+
+  Created by issuser on 2017/6/1.
+  Copyright © 2017年 lsq. All rights reserved.
+*/
+
+/*
+ *  @author 罗胜强, 2017-06-18 19:06:01
+ *
+ *  本地化多语言翻译。格式是("key" = "value";)，是括号里面的，不包含括号；需要注意的是双引号、等号和分号都必需在英文输入
+ *  法状态下输入。字体是UTF-8，内容是value。
+ *  以“//”开头的行不需要翻译，中间出现的“\n”保留不作处理。
+ *
+ *  @translator 何鹏, 2017-06-22 20:06:01
+ */
+
+
+//引导页
+"Guide_About_Video" = "About Video";
+"Guide_About_Picture" = "About Picture";
+"Guide_About_Private" = "About Private";
+"Guide_About_Video_Introduce" = "How to add video:\n\n1.Click record button on the top left corner of the video interface to record video.\n\n2.Connect mobile to PC through data cable. Open iTunes, choose this application. Then click bottom right corner button and choose the files that need to be added.\n\n3Click edit button on the top right corner, then click adding on the sidebar under editing mode.\n\n\nHow to play:\n\n1.Choose the video that has been added and enter play interface.\n\n2.Choose multi-view on the play interface, then click the button in the center and add video file.\n\n3.Click collection group on collection interface and enter play. It will play previous video automatically.";
+"Guide_About_Picture_Introduce" = "How to add photo:\n\n1.Click photo button on the top left corner on the photo interface to save photos.\n\n2.Connect mobile to PC through data cable. Open iTunes, choose this application. Then click bottom right corner button and choose the files that need to be added.\n\n3.Click edit button on the top right corner, then click adding on the sidebar under editing mode.\n\n4.Click “Screenshot” when playing the video.";
+"Guide_About_Private_Introduce" = "1.Setting->Private Management. If click directly，a dialog window will pop up and ask to input password. The default password is empty, just confirm and enter. If you want to set, then click blue i button.\n\n2.Password locking: If locking, you should input password when you enter Private Management every time. Otherwise, no need to do so. If input the correct password when un-locking, you will enter into real “Private Management”. If input the wrong password when un-locking, you will enter into fake “Private Management”. If you want to input the correct password after the wrong one when un-locking, just re-open it.\n\n3.Password setting: Correct way: Press “Password setting” for 3 seconds, a dialog box will pop up, the input password. If operate repeatedly, the final setting will be saved. Fake way: Click “Password setting” and a dialog box will pop up, you need to input password twice, actually, this inputting is useless.\n\n4.Public all: If locking this item, private files will be showed according to the password you input. It will show on the interface if the password is right. Otherwise, it will show nothing. If you want to input the correct password after inputting the wrong one when opening, just re-open it.\n\n5.Private Management: If locking this item, it needs to input the password when entering. No matter what you input, you can enter Private Management. But if the password is wrong, all the documents won’t be show, and will not save any changing.";
+"Guide_Next_Page" = "Next Page";
+"Guide_Enter" = "Enter";
+"Guide_New_Version" = "New Version";
+"Guide_Version_description" = "1.Fix some issues with rendering on full screen devices.";
+"Guide_Know" = "Enter";
+
+//首页和通用
+"Home_Right_Enable" = "Edit";
+"Home_Right_Disable" = "Cancel";
+"Home_Left_Back" = "Back";
+"Home_Delete" = "Delete";
+"Home_Rename" = "Rename";
+"Home_Add" = "Add";
+"Home_Share" = "Share";
+"Home_Share_Title" = "Multiple Players";
+"Home_Share_Content" = "This picture is very interesting";
+"Home_Share_Succeed" = "Share Succeed";
+"Home_Share_Failure" = "Share Failure";
+"Home_Move_Out" = "Move Out";
+"Home_Alert_Yes" = "Yes";
+"Home_Alert_No" = "No";
+"Home_Alert_OK" = "OK";
+"Home_Alert_Cancel" = "Cancel";
+"Home_Alert_Know" = "OK";
+
+//视频
+"Video_Title" = "Video";
+"Video_Record" = "Record";
+"Video_Local_File" = "Local Video";
+"Video_Network_File" = "Network Video";
+"Video_Import_Video" = "Import Video";
+"Video_Play_This_Video" = "Play this video";
+"Video_Video_Clip" = "The video clip";
+"Video_Video_Synthesis" = "Multiple video composite";
+"Video_Save_To_Album" = "Save to the album";
+"Video_Alert_Title1" = "Video";
+"Video_Alert_Message1" = "Are you sure you want to delete these videos";
+"Video_Alert_Message2" = "Please input new name";
+"Video_Alert_Title3" = "Add network Video";
+"Video_Alert_Message3" = "Input an URL address of the video";
+"Video_Alert_Message4" = "Input an alias, used to display";
+"Video_Alert_Title5" = "No right";
+"Video_Alert_Message5" = "You need to open access to the settings";
+
+//图片
+"Picture_Title" = "Picture";
+"Picture_Photo" = "Photo";
+"Picture_Local_File" = "Local Picture";
+"Picture_Network_File" = "Network Picture";
+"Picture_Import_Photo" = "Import photo";
+"Picture_Album" = "Choose from the album";
+"Picture_To_Album" = "To Album";
+"Picture_Take_Photo" = "Take a picture";
+"Picture_Alert_Title1" = "Picture";
+"Picture_Alert_Message1" = "Are you sure you want to delete these pictures";
+"Picture_Alert_Title2" = "Add network picture";
+"Picture_Alert_Message2" = "Input an URL address of the picture";
+
+//收藏组
+"Gruop_Title" = "Favorite Group";
+
+//设置
+"Setting_Title" = "Setting";
+"Setting_Password_Lock" = "Password Locking";
+"Setting_Record_Play_Time" = "Record Playback Time";
+"Setting_Private_Manage" = "Private Manage";
+"Setting_Video_Play" = "Video Play";
+"Setting_Video_Clip" = "Video Clip";
+"Setting_Video_Synthesis" = "Video Composite";
+"Setting_Version" = "Version";
+"Setting_Language" = "Language";
+"Setting_Select_Language" = "Select Language";
+"Setting_Chinese" = "中文";
+"Setting_English" = "English";
+"Setting_Spanish" = "Español";
+"Setting_Go_AppStore" = "Comment on App Store";
+"Setting_Alert_Title" = "Password";
+"Setting_Alert_Message" = "Please input password";
+
+//显示
+"Display_Title" = "Favorite Group";
+"Display_One_View" = "One View";
+"Display_Two_View" = "Two Views";
+"Display_Three_View" = "Three Views";
+"Display_Four_View" = "Four Views";
+"Display_Five_View" = "Five Views";
+"Display_Six_View" = "Six Views";
+"Display_Forward" = "Forward";
+"Display_Back" = "Back";
+"Display_Second" = "second";
+
+//选择文件
+"Select_Title" = "Select File";
+"Select_Confirm" = "Confirm";
+
+//私密设置
+"Private_Setting_Title" = "Private Setting";
+"Private_Setting_Password_Lock" = "Password Locking";
+"Private_Setting_Set_Password" = "Password Setting";
+"Private_Setting_Public_All" = "Public All";
+"Private_Setting_Alert_Title1" = "Set password";
+"Private_Setting_Alert_Message1" = "Please input password";
+"Private_Setting_Alert_Message2" = "Please input password again";
+"Private_Setting_Alert_Title2" = "Password";
+"Private_Setting_Alert_Title3" = "Fail";
+"Private_Setting_Alert_Message3" = "Two input inconsistent or is empty, please input again";
+
+//私密介绍
+"Private_Introduce_Title" = "Private Introduce";
+"Private_Introduce_Save" = "Save";
+"Private_Introduce_Content" = "1.Password locking: If locking, you should input password when you enter Private Management every time. Otherwise, no need to do so. If input the correct password when un-locking, you will enter into real “Private Management”. If input the wrong password when un-locking, you will enter into fake “Private Management”. If you want to input the correct password after the wrong one when un-locking, just re-open it.\n\n2.Password setting: Correct way: Press “Password setting” for 3 seconds, a dialog box will pop up, the input password. If operate repeatedly, the final setting will be saved. Fake way: Click “Password setting” and a dialog box will pop up, you need to input password twice, actually, this inputting is useless.\n\n3.Public all: If locking this item, private files will be showed according to the password you input. It will show on the interface if the password is right. Otherwise, it will show nothing. If you want to input the correct password after inputting the wrong one when opening, just re-open it.\n\n4.Private Management: If locking this item, it needs to input the password when entering. No matter what you input, you can enter Private Management. But if the password is wrong, all the documents won’t be show, and will not save any changing.\n\n5.Introduction page can be edit. After saving the edit introduction, we will show your modified content next time.";
+
+//私密文件
+"Private_File_Title" = "Private File";
+
+//密码锁定
+"Password_Title" = "Password Lock";
+"Password_Set" = "Set Password";
+"Password_Cancel" = "Cancel";
+"Password_Hint1" = "Please input password";
+"Password_Hint2" = "Please input password again";
+"Password_Hint3" = "Two input password is not consistent, please reset";
+"Password_Hint4" = "Set the password successfully";
+"Password_Hint5" = "Password is wrong, please input again";
+"Password_Hint6" = "Password is correct";
+
+//图片浏览器
+"Picture_Browser_Title" = "Picture Browser";
+"Picture_Browser_Share" = "Delete";
+
+//视频播放
+"VideoPlay_Title" = "Video Play";
+"VideoPlay_Full_Screen" = "Full Screen";
+"VideoPlay_Normal_Screen" = "Cancel";
+
+//视频合成
+"VideoSynthesis_Title" = "Video Composite";
+"VideoSynthesis_Add" = "Add";
+"VideoSynthesis_Delete" = "Delete";
+"VideoSynthesis_Synthesis" = "Composite";
+"VideoSynthesis_Compositing" = "Compositing";
+"VideoSynthesis_Succeed" = "Succeed";
+"VideoSynthesis_Failed" = "Failed";
+
+//视频剪辑
+"VideoClip_Title" = "Video Clip";
+"VideoClip_Add" = "Add";
+"VideoClip_Replace" = "Replace";
+"VideoClip_Begin_Time" = "Begin Time";
+"VideoClip_End_Time" = "End Time";
+"VideoClip_Clip" = "Clip";
+"VideoClip_Editing" = "Editing";
+"VideoClip_Succeed" = "Succeed";
+"VideoClip_Failed" = "Failed";
