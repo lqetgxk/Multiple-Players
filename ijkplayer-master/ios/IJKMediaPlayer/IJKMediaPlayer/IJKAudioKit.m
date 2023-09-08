@@ -61,8 +61,6 @@
         NSLog(@"IJKAudioKit: AVAudioSession.setActive(YES) failed: %@\n", error ? [error localizedDescription] : @"nil");
         return;
     }
-
-    return ;
 }
 
 - (BOOL)setActive:(BOOL)active
@@ -76,6 +74,7 @@
             NSLog(@"failed to inactive AVAudioSession\n");
         }
     }
+    return YES;
 }
 
 - (void)handleInterruption:(NSNotification *)notification

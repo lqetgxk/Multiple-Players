@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4494EC142AAB6AD800CD24CD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4494EC132AAB6AD800CD24CD /* WebViewController.m */; };
+		4494EC192AAB78E300CD24CD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4494EC162AAB78E300CD24CD /* WebKit.framework */; };
+		4494EC1C2AAB7F6200CD24CD /* FileImportMethod_en.html in Resources */ = {isa = PBXBuildFile; fileRef = 4494EC1A2AAB7F6100CD24CD /* FileImportMethod_en.html */; };
+		4494EC1D2AAB7F6200CD24CD /* FileImportMethod_zh.html in Resources */ = {isa = PBXBuildFile; fileRef = 4494EC1B2AAB7F6200CD24CD /* FileImportMethod_zh.html */; };
 		6507DB621F3BED190002D159 /* NewVersionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6507DB611F3BED190002D159 /* NewVersionViewController.m */; };
 		650941371F36C1E900426BBA /* VideoClipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650941361F36C1E900426BBA /* VideoClipViewController.m */; };
 		6509413A1F36C51900426BBA /* VideoComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650941391F36C51900426BBA /* VideoComposeViewController.m */; };
@@ -100,6 +104,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4494EC122AAB6AD800CD24CD /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		4494EC132AAB6AD800CD24CD /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		4494EC162AAB78E300CD24CD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		4494EC1A2AAB7F6100CD24CD /* FileImportMethod_en.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FileImportMethod_en.html; sourceTree = "<group>"; };
+		4494EC1B2AAB7F6200CD24CD /* FileImportMethod_zh.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FileImportMethod_zh.html; sourceTree = "<group>"; };
 		44E410BA29C6896600509386 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6507DB601F3BED190002D159 /* NewVersionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewVersionViewController.h; sourceTree = "<group>"; };
 		6507DB611F3BED190002D159 /* NewVersionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewVersionViewController.m; sourceTree = "<group>"; };
@@ -213,6 +222,7 @@
 			files = (
 				6541F1EB1EF6CEDE00405179 /* Photos.framework in Frameworks */,
 				6541F1E51EF613B400405179 /* StoreKit.framework in Frameworks */,
+				4494EC192AAB78E300CD24CD /* WebKit.framework in Frameworks */,
 				657628CA1EE99B0900030F7B /* libsqlite3.tbd in Frameworks */,
 				657628C81EE99AFA00030F7B /* ImageIO.framework in Frameworks */,
 				657628C61EE99AC200030F7B /* JavaScriptCore.framework in Frameworks */,
@@ -250,6 +260,8 @@
 		6558AC9C1EB082710054BFB1 /* MultipleVideo */ = {
 			isa = PBXGroup;
 			children = (
+				4494EC1A2AAB7F6100CD24CD /* FileImportMethod_en.html */,
+				4494EC1B2AAB7F6200CD24CD /* FileImportMethod_zh.html */,
 				6558ACBF1EB08C2F0054BFB1 /* 我的工具箱 */,
 				657628E61EEE72C600030F7B /* 引导页 */,
 				6558ACBE1EB08C0A0054BFB1 /* 视频 */,
@@ -299,6 +311,8 @@
 				65F577951EBD834D00EEDD78 /* AddPrivateViewController.m */,
 				65F5779A1EBE117100EEDD78 /* PrivatePasswordViewController.h */,
 				65F5779B1EBE117100EEDD78 /* PrivatePasswordViewController.m */,
+				4494EC122AAB6AD800CD24CD /* WebViewController.h */,
+				4494EC132AAB6AD800CD24CD /* WebViewController.m */,
 			);
 			name = "设置";
 			sourceTree = "<group>";
@@ -400,6 +414,7 @@
 		E7AE6BBE62C2E51A781CD87E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4494EC162AAB78E300CD24CD /* WebKit.framework */,
 				6541F1EA1EF6CEDE00405179 /* Photos.framework */,
 				6541F1E41EF613B400405179 /* StoreKit.framework */,
 				657628CB1EE99B1900030F7B /* MessageUI.framework */,
@@ -436,7 +451,6 @@
 				6558AC971EB082710054BFB1 /* Frameworks */,
 				6558AC981EB082710054BFB1 /* Resources */,
 				F7A2971DC8B898555A445BEE /* [CP] Embed Pods Frameworks */,
-				BE684C8B53D6A6A7D3A016D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -522,7 +536,9 @@
 			files = (
 				6558ACAD1EB082710054BFB1 /* LaunchScreen.storyboard in Resources */,
 				65DB5C6B1ED8105500B7A8FF /* VideoTableViewCell.xib in Resources */,
+				4494EC1C2AAB7F6200CD24CD /* FileImportMethod_en.html in Resources */,
 				65585F2E1EE299C300C23627 /* Language.strings in Resources */,
+				4494EC1D2AAB7F6200CD24CD /* FileImportMethod_zh.html in Resources */,
 				6541F1FD1EF8076B00405179 /* VideoCollectionViewCell.xib in Resources */,
 				6558ACE81EB1742F0054BFB1 /* DisplayViewController.xib in Resources */,
 				65585F271EE2977000C23627 /* InfoPlist.strings in Resources */,
@@ -544,28 +560,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MultipleVideo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BE684C8B53D6A6A7D3A016D6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultipleVideo/Pods-MultipleVideo-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F7A2971DC8B898555A445BEE /* [CP] Embed Pods Frameworks */ = {
@@ -574,13 +578,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultipleVideo/Pods-MultipleVideo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MWPhotoBrowser/MWPhotoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MWPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultipleVideo/Pods-MultipleVideo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultipleVideo/Pods-MultipleVideo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -591,6 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6558ACA21EB082710054BFB1 /* AppDelegate.m in Sources */,
+				4494EC142AAB6AD800CD24CD /* WebViewController.m in Sources */,
 				6558ACEB1EB1C00A0054BFB1 /* VideoTableViewController.m in Sources */,
 				6558ACCB1EB08D4B0054BFB1 /* SettingTableViewController.m in Sources */,
 				6509413A1F36C51900426BBA /* VideoComposeViewController.m in Sources */,
@@ -776,7 +790,7 @@
 			baseConfigurationReference = 94F444D9A3E8C417AB2F70AA /* Pods-MultipleVideo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 6.3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7WPGQ7BFGV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -794,7 +808,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 6.3;
+				MARKETING_VERSION = 6.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lsq.MultiplePlayers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -806,7 +820,7 @@
 			baseConfigurationReference = DCC0FD09A896A551F0C3EC3B /* Pods-MultipleVideo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 6.3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7WPGQ7BFGV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -824,7 +838,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 6.3;
+				MARKETING_VERSION = 6.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lsq.MultiplePlayers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

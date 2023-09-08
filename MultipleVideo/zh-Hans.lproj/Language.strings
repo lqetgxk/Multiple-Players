@@ -27,7 +27,7 @@
 "Guide_Next_Page" = "下一页";
 "Guide_Enter" = "进入";
 "Guide_New_Version" = "新版本";
-"Guide_Version_description" = "1.修复在全面屏设备上呈现的一些问题。";
+"Guide_Version_description" = " 1.增加了文件导入方法说明文档。";
 "Guide_Know" = "知道了";
 
 //首页和通用
@@ -94,6 +94,7 @@
 "Setting_Video_Clip" = "视频剪辑";
 "Setting_Video_Synthesis" = "视频合成";
 "Setting_Version" = "版本";
+"Setting_File_Import_Method" = "文件导入方法";
 "Setting_Language" = "语言";
 "Setting_Select_Language" = "选择语言";
 "Setting_Chinese" = "中文";
@@ -178,3 +179,7 @@
 "VideoClip_Editing" = "正在剪辑";
 "VideoClip_Succeed" = "成功";
 "VideoClip_Failed" = "失败";
+
+//文件导入方法的说明文档
+"FileImportMethod_Title" = "文件导入方法";
+"FileImportMethod_html" = "FileImportMethod_zh.html";

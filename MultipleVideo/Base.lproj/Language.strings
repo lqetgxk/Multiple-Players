@@ -27,7 +27,7 @@
 "Guide_Next_Page" = "Next Page";
 "Guide_Enter" = "Enter";
 "Guide_New_Version" = "New Version";
-"Guide_Version_description" = "1.Fix some issues with rendering on full screen devices.";
+"Guide_Version_description" = "1. Added the document describing how to import files.";
 "Guide_Know" = "Enter";
 
 //首页和通用
@@ -86,7 +86,7 @@
 "Gruop_Title" = "Favorite Group";
 
 //设置
-"Setting_Title" = "Setting";
+"Setting_Title" = "Settings";
 "Setting_Password_Lock" = "Password Locking";
 "Setting_Record_Play_Time" = "Record Playback Time";
 "Setting_Private_Manage" = "Private Manage";
@@ -94,6 +94,7 @@
 "Setting_Video_Clip" = "Video Clip";
 "Setting_Video_Synthesis" = "Video Composite";
 "Setting_Version" = "Version";
+"Setting_File_Import_Method" = "File Import Method";
 "Setting_Language" = "Language";
 "Setting_Select_Language" = "Select Language";
 "Setting_Chinese" = "中文";
@@ -178,3 +179,7 @@
 "VideoClip_Editing" = "Editing";
 "VideoClip_Succeed" = "Succeed";
 "VideoClip_Failed" = "Failed";
+
+//文件导入方法的说明文档
+"FileImportMethod_Title" = "Import Method";
+"FileImportMethod_html" = "FileImportMethod_en.html";

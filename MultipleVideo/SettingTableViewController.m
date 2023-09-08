@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelVideoPlay;
 @property (weak, nonatomic) IBOutlet UILabel *labelVersionMark;
 @property (weak, nonatomic) IBOutlet UILabel *labelVersion;
+@property (weak, nonatomic) IBOutlet UILabel *labelImportMethod;
 @property (weak, nonatomic) IBOutlet UILabel *labelLanguageMark;
 @property (weak, nonatomic) IBOutlet UILabel *labelLanguage;
 @property (weak, nonatomic) IBOutlet UILabel *labelGoToAppStore;
@@ -45,14 +46,11 @@
     [_labelVersion setText:[NSString stringWithFormat:@"%@", [dictionary objectForKey:@"CFBundleShortVersionString"]]];
     if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"] isEqualToString:@"zh-Hans"]) {
         [_labelLanguage setText:MVLocalizedString(@"Setting_Chinese", @"中文")];
-    }
-    else if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"] isEqualToString:@"en"]) {
+    } else if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"] isEqualToString:@"en"]) {
         [_labelLanguage setText:MVLocalizedString(@"Setting_English", @"英文")];
-    }
-    else if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"] isEqualToString:@"es"]) {
+    } else if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"] isEqualToString:@"es"]) {
         [_labelLanguage setText:MVLocalizedString(@"Setting_Spanish", @"西班牙文")];
-    }
-    else {
+    } else {
         [_labelLanguage setText:MVLocalizedString(@"Setting_English", @"Base")];
     }
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
@@ -75,6 +73,7 @@
     [_labelVideoClip setText:MVLocalizedString(@"Setting_Video_Clip", @"视频剪辑")];
     [_labelVideoSynthesis setText:MVLocalizedString(@"Setting_Video_Synthesis", @"视频合成")];
     [_labelVideoPlay setText:MVLocalizedString(@"Setting_Video_Play", @"视频播放")];
+    [_labelImportMethod setText:MVLocalizedString(@"Setting_File_Import_Method", "文件导入的方法")];
     [_labelVersionMark setText:MVLocalizedString(@"Setting_Version", @"版本")];
     [_labelLanguageMark setText:MVLocalizedString(@"Setting_Language", @"选择语言")];
     [_labelGoToAppStore setText:MVLocalizedString(@"Setting_Go_AppStore", @"去应用商店评论")];
@@ -88,8 +87,7 @@
             [sender setOn:NO];
         }];
         [self presentViewController:viewController animated:YES completion:nil];
-    }
-    else {
+    } else {
         [[MultipleVideo shareInstance] setPassword:nil];
     }
 }
@@ -133,7 +131,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if ((2 == indexPath.section) && (0 == indexPath.row)) { //选择语言
+    if ((2 == indexPath.section) && (1 == indexPath.row)) { //选择语言
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:MVLocalizedString(@"Setting_Select_Language", @"选择语言")
                                                                        message:nil
                                                                 preferredStyle:UIAlertControllerStyleActionSheet];
@@ -144,25 +142,18 @@
             if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"] isEqualToString:@"zh-Hans"]) {
                 [[NSUserDefaults standardUserDefaults] setObject:@"zh-Hans" forKey:@"appLanguage"];
                 [self languageChangedNotification:nil];
-                [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_LANGUAGE_CHANGED
-                                                                    object:nil
-                                                                  userInfo:nil];
+                [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_LANGUAGE_CHANGED object:nil userInfo:nil];
             }
         }]];
-        [alert addAction:[UIAlertAction actionWithTitle:MVLocalizedString(@"Setting_English", @"英文")
-                                                  style:UIAlertActionStyleDefault
-                                                handler:^(UIAlertAction * _Nonnull action) {
+        [alert addAction:[UIAlertAction actionWithTitle:MVLocalizedString(@"Setting_English", @"英文") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [_labelLanguage setText:MVLocalizedString(@"Setting_English", @"英文")];
             if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"] isEqualToString:@"en"]) {
                 [[NSUserDefaults standardUserDefaults] setObject:@"en" forKey:@"appLanguage"];
                 [self languageChangedNotification:nil];
-                [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_LANGUAGE_CHANGED
-                                                                    object:nil
-                                                                  userInfo:nil];
+                [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_LANGUAGE_CHANGED object:nil userInfo:nil];
             }
         }]];
-        [alert addAction:[UIAlertAction actionWithTitle:MVLocalizedString(@"Home_Alert_Cancel", @"取消")
-                                                  style:UIAlertActionStyleCancel handler:nil]];
+        [alert addAction:[UIAlertAction actionWithTitle:MVLocalizedString(@"Home_Alert_Cancel", @"取消") style:UIAlertActionStyleCancel handler:nil]];
         UIPopoverPresentationController *popoverPresentationController = [alert popoverPresentationController];
         if (popoverPresentationController) { //iPad 时会走下面，如果没有下面就会崩溃
             UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
@@ -171,16 +162,14 @@
             [popoverPresentationController setPermittedArrowDirections:UIPopoverArrowDirectionAny];
         }
         [self presentViewController:alert animated:YES completion:nil];
-    }
-    else if ((2 == indexPath.section) && (2 == indexPath.row)) { //去评论
+    } else if ((2 == indexPath.section) && (3 == indexPath.row)) { //去评论
         SKStoreProductViewController *viewController = [[SKStoreProductViewController alloc] init];
         [viewController setDelegate:self];
         [viewController loadProductWithParameters:@{SKStoreProductParameterITunesItemIdentifier:@"1249206872"}
                                   completionBlock:^(BOOL result, NSError * _Nullable error) {
                                       if (error) {
                                           NSLog(@"%@", error);
-                                      }
-                                      else {
+                                      } else {
                                           [self presentViewController:viewController animated:YES completion:nil];
                                       }
         }];
